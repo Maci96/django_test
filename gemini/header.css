@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #2D3748;
+    height: 65px;
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align vertically */
+    padding: 0 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    nav {
+      flex-direction: column; /* Stack items vertically */
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+  }
+  
